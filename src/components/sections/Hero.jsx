@@ -1,7 +1,7 @@
 import React from 'react';
 import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 import FadeIn from '../animations/FadeIn';
-import { ChevronDown, Star } from 'lucide-react';
+import { ChevronDown, MapPin, Star } from 'lucide-react';
 import { PERSONAL_INFO } from '../../utils/constants';
 import { scrollToSection } from '../../hooks/useScrollSpy';
 import { SiExpress, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss } from 'react-icons/si';
@@ -18,11 +18,19 @@ const Hero = () => {
                     {/* left column - Intro & Designation */}
                     <div className='text-left'>
                         <FadeIn delay={0}>
-                            <div className='inline-flex items-center gap-2.5 px-[18px] py-[11px] mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full'>
-                                <Star className='w-4 h-4 text-white fill-white'/>
-                                <span className='text-xs md:text-sm text-white tracking-[1.2px]'>
-                                    {PERSONAL_INFO.title} | Based in {PERSONAL_INFO.location}
-                                </span>
+                            <div className='flex flex-col gap-2'>
+                                <div className='inline-flex w-fit items-center gap-2.5 px-[18px] py-[11px] bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full'>
+                                    <Star className='w-4 h-4 text-white fill-white' />
+                                    <span className='text-xs md:text-sm text-white tracking-[1.2px]'>
+                                        {PERSONAL_INFO.title}
+                                    </span>
+                                </div>
+                                <div className='inline-flex w-fit items-center gap-2.5 px-[18px] py-[11px] mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full'>
+                                    <MapPin className='w-4 h-4 text-white' />
+                                    <span className='text-xs md:text-sm text-white tracking-[1.2px]'>
+                                        Based in {PERSONAL_INFO.location}
+                                    </span>
+                                </div>
                             </div>
                         </FadeIn>
                         <FadeIn delay={100}>
@@ -35,8 +43,8 @@ const Hero = () => {
                         </FadeIn>
                         <FadeIn delay={300}>
                             <button
-                            className='inline-flex items-center gap-0 mb-12 group'
-                            onClick={()=> scrollToSection('contact')}
+                                className='inline-flex items-center gap-0 mb-12 group'
+                                onClick={() => scrollToSection('contact')}
                             >
                                 <div className='relative z-10 bg-white text-[#212121] rounded-[17px] px-[26px] py-[13px] text-base'>
                                     Get in Touch
@@ -57,10 +65,10 @@ const Hero = () => {
 
                                 {/* image container */}
                                 <div className="relative rounded-2xl overflow-hidden m-[3px] h-[calc(100%-2px)]">
-                                    <img 
-                                    src="/Dev_Image.png" 
-                                    alt="Dev_Image"
-                                    className='w-full h-full object-cover'
+                                    <img
+                                        src="/Dev_Image.png"
+                                        alt="Dev_Image"
+                                        className='w-full h-full object-cover'
                                     />
                                 </div>
 
@@ -84,7 +92,7 @@ const Hero = () => {
                                             <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
                                                 <SiNodedotjs className='w-full h-full text-primary' />
                                             </div>
-                                            
+
                                             <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
                                                 <SiNextdotjs className='w-full h-full text-primary' />
                                             </div>
@@ -104,8 +112,8 @@ const Hero = () => {
 
             {/* scroll indicator */}
             <button
-            className='absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce'
-            onClick={()=>scrollToSection('about')}
+                className='absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce'
+                onClick={() => scrollToSection('about')}
             >
                 <ChevronDown className='w-8 h-8 text-primary' />
             </button>

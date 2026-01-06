@@ -13,7 +13,7 @@ const About = () => {
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* main grid */}
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-center'>
 
                     {/* left column - about me */}
                     <div className="flex flex-col gap-12">
@@ -22,7 +22,6 @@ const About = () => {
                                 <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
                                     <Code2 className='w-4 h-4 text-primary' />
                                     <span className="text-sm text-primary font-medium">MERN Stack Developer</span>
-                                    <Sparkles className='w-4 h-4 text-primary' />
                                 </div>
                             </FadeIn>
 
