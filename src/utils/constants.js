@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
     email: "ikkabir24@yahoo.com",
     location: "Rajshahi, Bangladesh.",
     tagline: "Building seamless, scalable web experiences with the MERN Stack.",
-    bio: "I am a MERN Stack Developer specializing in building scalable, responsive, and user-focused web applications. I work with MongoDB, Express.js, React, and Node.js to create secure, high-performance solutions from concept to deployment. I enjoy transforming complex requirements into clean, maintainable code and continuously improving my skills by working on real-world projects. Passionate about modern web technologies, I aim to deliver reliable digital products that create meaningful user experiences and business value."
+    bio: "I am a MERN Stack Developer with a primary focus on Frontend Development using React.js and Node.js. I have completed my foundational learning and built couple of real world MERN stack projects, which helped me understand component-based architecture, state management, API integration, and full-stack application flow. I enjoy translating ideas into clean, responsive user interfaces and continuously improving my frontend skills through practice. I am ambitious, disciplined, and actively preparing myself for entry-level roles or internships, with a strong commitment to learning, consistency, and long-term growth as a professional developer."
 }
 
 export const SOCIAL_LINKS = {
