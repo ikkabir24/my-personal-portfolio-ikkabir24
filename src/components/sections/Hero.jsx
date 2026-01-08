@@ -5,6 +5,9 @@ import { ChevronDown, MapPin, Star } from 'lucide-react';
 import { PERSONAL_INFO } from '../../utils/constants';
 import { scrollToSection } from '../../hooks/useScrollSpy';
 import { SiExpress, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss } from 'react-icons/si';
+import SectionBadge from '../../shared/SectionBadge';
+import PrimaryTitle from '../../shared/PrimaryTitle';
+import SubTitle from '../../shared/SubTitle';
 
 const Hero = () => {
     return (
@@ -18,39 +21,30 @@ const Hero = () => {
                     {/* left column - Intro & Designation */}
                     <div className='text-left'>
                         <FadeIn delay={0}>
-                            <div className='flex flex-col gap-2'>
-                                <div className='inline-flex w-fit items-center gap-2.5 px-[18px] py-[11px] bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full'>
-                                    <Star className='w-4 h-4 text-white fill-white' />
-                                    <span className='text-xs md:text-sm text-white tracking-[1.2px]'>
-                                        {PERSONAL_INFO.title}
-                                    </span>
-                                </div>
-                                <div className='inline-flex w-fit items-center gap-2.5 px-[18px] py-[11px] mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full'>
-                                    <MapPin className='w-4 h-4 text-white' />
-                                    <span className='text-xs md:text-sm text-white tracking-[1.2px]'>
-                                        Based in {PERSONAL_INFO.location}
-                                    </span>
-                                </div>
+                            <div className='flex flex-col gap-2 mb-6'>
+                                <SectionBadge label={PERSONAL_INFO.title} icon={Star}></SectionBadge>
+                                <SectionBadge label={`Based in ${PERSONAL_INFO.location}`} icon={MapPin}></SectionBadge>
                             </div>
                         </FadeIn>
-                        <FadeIn delay={100}>
-                            <h1 className='text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight'>
-                                MERN Stack Developer Portfolio
-                            </h1>
-                        </FadeIn>
-                        <FadeIn delay={200}>
-                            <p className='text-lg text-white/70 max-w-[550px] mb-8'>Building seamless, scalable web experiences with the MERN Stack. Transforming ideas into exceptional digital experiences.</p>
-                        </FadeIn>
-                        <FadeIn delay={300}>
-                            <button
-                                className='inline-flex items-center gap-0 mb-12 group'
-                                onClick={() => scrollToSection('contact')}
-                            >
-                                <div className='relative z-10 bg-white text-[#212121] rounded-[17px] px-[26px] py-[13px] text-base'>
-                                    Get in Touch
-                                </div>
-                            </button>
-                        </FadeIn>
+
+                        <div className='flex flex-col gap-8'>
+                            <FadeIn delay={100}>
+                                <PrimaryTitle>MERN Stack Developer Portfolio</PrimaryTitle>
+                            </FadeIn>
+                            <FadeIn delay={200}>
+                                <SubTitle>Building seamless, scalable web experiences with the MERN Stack. Transforming ideas into exceptional digital experiences.</SubTitle>
+                            </FadeIn>
+                            <FadeIn delay={300}>
+                                <button
+                                    className='inline-flex items-center gap-0 mb-12 group'
+                                    onClick={() => scrollToSection('contact')}
+                                >
+                                    <div className='relative z-10 bg-white text-[#212121] rounded-[17px] px-[26px] py-[13px] text-base'>
+                                        Get in Touch
+                                    </div>
+                                </button>
+                            </FadeIn>
+                        </div>
 
                         {/* in future stats will be here */}
                     </div>

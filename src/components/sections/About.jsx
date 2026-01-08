@@ -3,6 +3,8 @@ import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 import FadeIn from '../animations/FadeIn';
 import { Brain, Code2, Download, HatGlasses, Sparkles, Zap } from 'lucide-react';
 import { PERSONAL_INFO } from '../../utils/constants';
+import PrimaryTitle from '../../shared/PrimaryTitle';
+import SectionBadge from '../../shared/SectionBadge';
 
 const About = () => {
     return (
@@ -19,14 +21,11 @@ const About = () => {
                     <div className="flex flex-col gap-12">
                         <div className="flex flex-col gap-8">
                             <FadeIn delay={60}>
-                                <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
-                                    <Code2 className='w-4 h-4 text-primary' />
-                                    <span className="text-sm text-primary font-medium">MERN Stack Developer</span>
-                                </div>
+                                <SectionBadge label={"MERN Stack Developer"} icon={Code2}/>
                             </FadeIn>
 
                             <FadeIn delay={100}>
-                                <h2 className="text-4xl lg:text-5xl font-normal text-white leading-tight">About Me</h2>
+                                <PrimaryTitle>About Me</PrimaryTitle>
                             </FadeIn>
 
                             <FadeIn delay={200}>

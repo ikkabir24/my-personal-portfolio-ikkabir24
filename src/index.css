@@ -27,7 +27,7 @@
         width: 10px;
     }
 
-    ::-webkit-scrollbar-track{
+    ::-webkit-scrollbar-track {
         background: #0a0a0a;
     }
 
@@ -55,22 +55,25 @@
     .hide-scrollbar::-webkit-scrollbar {
         display: none;
     }
-    
+
     /* animation keyframes */
     @keyframes fadeIn {
         from {
             opacity: 0;
         }
+
         to {
             opacity: 1;
         }
     }
 
     @keyframes pulse {
+
         0%,
         100% {
             opacity: 0.3;
         }
+
         50% {
             opacity: 0.5;
         }
@@ -93,6 +96,7 @@
         from {
             transform: rotate(0deg);
         }
+
         to {
             transform: rotate(360deg);
         }
@@ -105,10 +109,40 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+
     .line-clamp-3 {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+}
+
+
+
+
+/* swiper */
+
+/* projects.css or global styles */
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+    @apply text-primary bg-black/40 rounded-full p-3 transition;
+    top: 50%;
+    /* vertically center */
+    transform: translateY(-50%);
+}
+
+.mySwiper .swiper-button-prev {
+    left: -3rem;
+    /* push outside carousel */
+}
+
+.mySwiper .swiper-button-next {
+    right: -3rem;
+    /* push outside carousel */
+}
+
+.mySwiper .swiper-button-prev:hover,
+.mySwiper .swiper-button-next:hover {
+    @apply bg-primary text-white;
 }

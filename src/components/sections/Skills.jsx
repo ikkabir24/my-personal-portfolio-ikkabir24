@@ -3,27 +3,27 @@ import FadeIn from '../animations/FadeIn';
 import { backEndSkills, frontEndSkills, toolsSkill } from '../../data/skills';
 import { Box } from 'lucide-react';
 import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
+import PrimaryTitle from '../../shared/PrimaryTitle';
+import SectionBadge from '../../shared/SectionBadge';
+import SubTitle from '../../shared/SubTitle';
 
 const Skills = () => {
     return (
-        <section id='skills' className='relative min-h-screen overflow-hidden flex flex-col items-center gap-8 pb-20'>
+        <section id='skills' className='relative min-h-screen overflow-hidden flex flex-col items-center gap-8'>
 
             <RadialGradientBackground />
 
             <FadeIn delay={100}>
                 <div className='text-center'>
-                    <h3 className='text-4xl lg:text-5xl font-normal text-white leading-tight mb-6'>Tech Skills</h3>
-                    <p className="text-white/60">The technologies I have work with to build amazing products.</p>
+                    <PrimaryTitle tailClass={'mb-6'}>Tech Skills</PrimaryTitle>
+                    <SubTitle>The technologies I have work with to build amazing products.</SubTitle>
                 </div>
             </FadeIn>
 
 
             {/* front end skills */}
             <FadeIn delay={200}>
-                <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
-                    <Box className='w-4 h-4 text-primary' />
-                    <span className="text-sm text-primary font-medium">FrontEnd</span>
-                </div>
+                <SectionBadge label={"FrontEnd"} icon={Box}/>
             </FadeIn>
 
             <FadeIn delay={300}>
@@ -49,10 +49,7 @@ const Skills = () => {
 
             {/* back end skills */}
             <FadeIn delay={400}>
-                <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
-                    <Box className='w-4 h-4 text-primary' />
-                    <span className="text-sm text-primary font-medium">BackEnd</span>
-                </div>
+                <SectionBadge label={"BackEnd"} icon={Box}/>
             </FadeIn>
 
             <FadeIn delay={500}>
@@ -78,10 +75,7 @@ const Skills = () => {
 
             {/* Tools */}
             <FadeIn delay={400}>
-                <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
-                    <Box className='w-4 h-4 text-primary' />
-                    <span className="text-sm text-primary font-medium">Tools</span>
-                </div>
+                <SectionBadge label={"Tools"} icon={Box}/>
             </FadeIn>
 
             <FadeIn delay={500}>
