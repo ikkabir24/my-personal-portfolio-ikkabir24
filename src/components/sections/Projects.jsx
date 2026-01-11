@@ -15,7 +15,7 @@ import SubTitle from '../../shared/SubTitle';
 
 const Projects = () => {
     return (
-        <section id='projects' className='relative pt-15 pb-20 bg-black overflow-hidden'>
+        <section id='projects' className='relative pt-15 pb-10 bg-black overflow-hidden'>
             <RadialGradientBackground variant="about" />
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-1/3 right-0 w-96 h-96 bg-primary/20 opacity-20 rounded-full blur-3xl"></div>
@@ -30,7 +30,7 @@ const Projects = () => {
 
                         <SubTitle tailClass={'mb-6'}>Showcasing my best work and achievements</SubTitle>
 
-                        <SectionBadge tailClass={'mb-6'} label={"My Works"} icon={Briefcase}/>
+                        <SectionBadge tailClass={'mb-6'} label={"My Works"} icon={Briefcase} />
 
                         <div>
                             <Swiper
@@ -44,18 +44,20 @@ const Projects = () => {
                                 centeredSlides={true}
                                 spaceBetween={30}
                                 grabCursor={true}
-                                loop={true}   // ✅ infinite scroll
-                                autoplay={{
-                                    delay: 2500,
-                                    disableOnInteraction: false,
-                                }}
+                                loop={true} // ✅ infinite scroll
+                                autoplay={{ delay: 2500, disableOnInteraction: false }}
                                 pagination={{
                                     clickable: true,
+                                    renderBullet: (index, className) => {
+                                        return `<span 
+                                        class="${className}">
+                                        </span>`;
+                                    },
                                 }}
-                                navigation={true}   // ✅ navigation buttons
+                                navigation={true} // ✅ navigation buttons
                                 className="mySwiper relative"
                             >
-                                {projects.map(project => (
+                                {projects.map((project) => (
                                     <SwiperSlide key={project.id}>
                                         <ProjectCard project={project} />
                                     </SwiperSlide>
