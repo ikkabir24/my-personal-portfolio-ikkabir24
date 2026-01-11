@@ -6,21 +6,25 @@ import Skills from './components/sections/Skills';
 import Projects from './components/sections/Projects';
 import Education from './components/sections/Education';
 import Contact from './components/sections/Contact';
+import Footer from './components/layout/Footer';
 
 const App = () => {
     return (
         <div className='min-h-screen bg-black'>
             <header>
-                <Navbar></Navbar>
+                <Navbar />
             </header>
             <main>
-                <Hero></Hero>
-                <About></About>
-                <Skills></Skills>
-                <Projects></Projects>
-                <Education></Education>
-                <Contact></Contact>
+                <Hero />
+                <About />
+                <Skills />
+                <Projects />
+                <Education />
+                <Contact />
             </main>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     );
 };

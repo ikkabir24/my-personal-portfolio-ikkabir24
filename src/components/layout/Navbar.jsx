@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Code, Menu, X } from 'lucide-react';
 import { NAV_LINKS, PERSONAL_INFO } from '../../utils/constants';
 import { scrollToSection, useScrollSpy } from '../../hooks/useScrollSpy';
+import Logo from '../ui/Logo';
 
 const Navbar = () => {
 
@@ -37,17 +38,7 @@ const Navbar = () => {
             <div className='max-w-[1320px] mx-auto px-5'>
                 <div className='flex items-center justify-between'>
                     {/* logo */}
-                    <div className='flex items-center gap-4'>
-                        <Code className='w-6 h-6 text-primary' />
-
-                        <button
-                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            className='text-4xl font-bold bg-linear-to-r from-primary via via-primary/50 to-primary/30 bg-clip-text text-transparent hover:opacity-80 transition-opacity'
-                            aria-label='home'
-                        >
-                            {PERSONAL_INFO.name.split(' ')[2]}
-                        </button>
-                    </div>
+                    <Logo></Logo>
 
                     {/* desktop navigation */}
                     <nav className='hidden md:flex items-center gap-7'>

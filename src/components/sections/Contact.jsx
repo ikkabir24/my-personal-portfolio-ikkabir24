@@ -113,7 +113,7 @@ const Contact = () => {
                 <FadeIn delay={0}>
                     <div className="w-full flex flex-col gap-6 justify-center items-center mb-12">
                         <PrimaryTitle>Let's Work Together</PrimaryTitle>
-                        <SubTitle>Thinking about a project? I’d love to help turn your vision into reality.</SubTitle>
+                        <SubTitle tailClass={'text-center'}>Thinking about a project? I’d love to help turn your vision into reality.</SubTitle>
                         <SectionBadge label={'Get in Touch'} icon={MessageSquare} />
                     </div>
                 </FadeIn>

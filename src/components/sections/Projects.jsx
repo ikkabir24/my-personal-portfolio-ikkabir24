@@ -28,7 +28,7 @@ const Projects = () => {
                     <div className="text-center mb-12">
                         <PrimaryTitle tailClass={'mb-6'}>Featured Projects</PrimaryTitle>
 
-                        <SubTitle tailClass={'mb-6'}>Showcasing my best work and achievements</SubTitle>
+                        <SubTitle tailClass={'mb-6 mx-auto'}>Showcasing my best work and achievements</SubTitle>
 
                         <SectionBadge tailClass={'mb-6'} label={"My Works"} icon={Briefcase} />
 
