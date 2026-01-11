@@ -8,6 +8,7 @@ import { SiExpress, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss 
 import SectionBadge from '../../shared/SectionBadge';
 import PrimaryTitle from '../../shared/PrimaryTitle';
 import SubTitle from '../../shared/SubTitle';
+import SecondaryTitle from '../../shared/SecondaryTitle';
 
 const Hero = () => {
     return (
@@ -29,7 +30,8 @@ const Hero = () => {
 
                         <div className='flex flex-col gap-8'>
                             <FadeIn delay={100}>
-                                <PrimaryTitle>MERN Stack Developer Portfolio</PrimaryTitle>
+                                <PrimaryTitle>Hi, I'm Kabir.</PrimaryTitle>
+                                <SecondaryTitle>A MERN Stack Developer.</SecondaryTitle>
                             </FadeIn>
                             <FadeIn delay={200}>
                                 <SubTitle>Building seamless, scalable web experiences with the MERN Stack. Transforming ideas into exceptional digital experiences.</SubTitle>

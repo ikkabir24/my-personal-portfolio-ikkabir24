@@ -9,7 +9,7 @@ import SubTitle from '../../shared/SubTitle';
 
 const Skills = () => {
     return (
-        <section id='skills' className='relative min-h-screen overflow-hidden flex flex-col items-center gap-8'>
+        <section id='skills' className='relative min-h-screen overflow-hidden flex flex-col items-center gap-8 pb-5'>
 
             <RadialGradientBackground />
 

@@ -94,7 +94,7 @@ export default function Education() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn delay={0}>
           <div className="flex flex-col justify-center items-center gap-6 mb-6">
-            <PrimaryTitle>Education Qualification</PrimaryTitle>
+            <PrimaryTitle>Educational Qualification</PrimaryTitle>
             <SubTitle>Academic background and qualifications</SubTitle>
             <SectionBadge icon={GraduationCap} label={'Academic Journey'} />
           </div>
