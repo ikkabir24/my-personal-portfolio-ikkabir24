@@ -10,8 +10,8 @@ const About = () => {
 
         const handleDownload = () => {
             const link = document.createElement("a");
-            link.href = "/Resume.pdf";
-            link.download = "Kabir-Resume.pdf";
+            link.href = "/resume.pdf";
+            link.download = "Kabir - Resume.pdf";
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -29,7 +29,7 @@ const About = () => {
 
                         {/* left column - about me */}
                         <div className="flex flex-col gap-12">
-                            <div className="flex flex-col gap-8">
+                            <div className="flex flex-col gap-6">
                                 <FadeIn delay={60}>
                                     <SectionBadge label={"MERN Stack Developer"} icon={Code2} />
                                 </FadeIn>
